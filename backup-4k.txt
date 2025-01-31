@@ -29,7 +29,7 @@
 ===||||Novaler_4K_BOOT_5|||=== https://khaledali.com
 01_Openpli_9.0_BOOT_5 https://www.novaler.com/uploads/enigma/boot5/openpli-develop-multibox-boot5.zip
 ===|||Novaler_4K_Android|||=== https://khaledali.com
-01_Android_8_4K https://www.novaler.com/uploads/flashes/Android8.0_recovery3.53_multibox4k_01012024.zip
+01_Android_8_4K https://www.novaler.com/uploads/flashes/Android_8.0_multibox_4k_20012025.zip
 02_Android_7_4K https://www.novaler.com/uploads/flashes/Android-v2022-multibox.zip
 03_Androi_senator https://www.novaler.com/uploads/flashes/Multibox-H5D-Senator.zip
 04_Android_Golden https://www.novaler.com/uploads/flashes/Multibox-STAR_NET_GOLDEN-2070.zip
