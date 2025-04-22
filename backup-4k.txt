@@ -27,6 +27,7 @@
 05_Egami_10.6.R9_03042025 https://www.novaler.com/uploads/enigma/egami/egami-10.6.r9-novaler4k-backup-20250403_1102_usb.zip
 06_PurE2_7.4_06042025 https://www.novaler.com/uploads/enigma/pure2/pure2-7.4-novaler4k-backup-20250406_usb.zip
 07_OpenBH_5.5.1.008_07042025 https://www.novaler.com/uploads/enigma/openbh/openbh-5.5.1-008-novaler4k-backup-20250407_mmc.zip
+08_OpenSPA_8.5.001_22042025 https://www.novaler.com/uploads/enigma/openspa/openspa-8.5-001-novaler4k-backup-20250422_usb.zip
 ===||||Novaler_4K_BOOT_5|||=== https://khaledali.com
 01_Openpli_9.0_BOOT_5 https://www.novaler.com/uploads/enigma/boot5/openpli-develop-multibox-boot5.zip
 ===|||Novaler_4K_Android|||=== https://khaledali.com
