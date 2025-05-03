@@ -16,7 +16,7 @@
 03_Openpli_10.1 https://www.novaler.com/uploads/enigma/openpli/openpli-10.1-multibox_emmc.zip
 04_OpenPLi_9.1 https://www.novaler.com/uploads/enigma/openpli/openpli-9.1-multibox_emmc.zip
 05_Openbh_5.5.1.010 https://www.novaler.com/uploads/enigma/openbh/openbh-5.5.1.010.release-novaler4k_multi.zip 
-06_Egami_10.6_R9 https://image.egami-image.com/10.6/novaler4k/egami-10.6-r9-novaler4k-20250401_multi.zip
+06_Egami_10.6_R10 https://image.egami-image.com/10.6/novaler4k/egami-10.6-r10-novaler4k-20250502_multi.zip
 07_PurE2_7.4 https://dl.dropboxusercontent.com/scl/fi/rebun1u86cy4b9dg0sbh7/novaler4k-PurE2-7.4-20240829_multi.zip?rlkey=rks7z8mqlmaoefdt9fnyi20or&st=6fwxfwoz&dl=0
 08_OpenVix_6.7.008 https://www.novaler.com/uploads/enigma/openvix/openvix-6.7.008.release-novaler4k_multi.zip
 ===|||Novaler_4K_Official|||=== https://khaledali.com
