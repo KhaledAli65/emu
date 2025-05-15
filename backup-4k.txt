@@ -13,8 +13,8 @@
 ===|||Novaler_4K_RAW_Image|||=== https://khaledali.com
 01_Openatv_7.5.1 https://images.mynonpublic.com/openatv/7.5.1/current.php?open=novaler4k
 02_Openatv_7.6 https://images.mynonpublic.com/openatv/7.6/current.php?open=novaler4k
-03_Openpli_10.1 https://www.novaler.com/uploads/enigma/openpli/openpli-10.1-multibox_emmc.zip
-04_OpenPLi_9.1 https://www.novaler.com/uploads/enigma/openpli/openpli-9.1-multibox_emmc.zip
+03_Openpli_Scarthgap https://downloads.openpli.org/builds/multibox/openpli-scarthgap-multibox-20250506_emmc.zip
+04_OpenPLi_9.1 https://downloads.openpli.org/builds/multibox/openpli-9.1-release-multibox-20250511_emmc.zip
 05_Openbh_5.5.1.010 https://www.novaler.com/uploads/enigma/openbh/openbh-5.5.1.010.release-novaler4k_multi.zip 
 06_Egami_10.6_R10 https://image.egami-image.com/10.6/novaler4k/egami-10.6-r10-novaler4k-20250502_multi.zip
 07_PurE2_7.4 https://dl.dropboxusercontent.com/scl/fi/rebun1u86cy4b9dg0sbh7/novaler4k-PurE2-7.4-20240829_multi.zip?rlkey=rks7z8mqlmaoefdt9fnyi20or&st=6fwxfwoz&dl=0
