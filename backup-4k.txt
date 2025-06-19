@@ -1,11 +1,11 @@
 *****|Welcome|***** https://khaledali.com
 ===KhaledAli_Novaler_4K_online_flash=== https://khaledali.com
 ====|||KhaledAli_Backup|||==== https://khaledali.com 
-01_Openbh_5.5.1.012_12062025 https://dl.dropboxusercontent.com/scl/fi/9f17kb531zb2ro7b13ojz/openbh-5.5-novaler4k.zip?rlkey=b74lhwlqw8oj3j77ahnaz4wf5&st=xp7liw6p&dl=0
-02_OpenPli_9.1_09062025 https://dl.dropboxusercontent.com/scl/fi/241c4w68obgp1d9yzd6w6/openpli-9.1-novaler4k-backup.zip?rlkey=axy0qpld8n48klgd2p6ogtxyg&st=2tiiy0ya&dl=0
-03_PurE2_7.4_09062025 https://dl.dropboxusercontent.com/scl/fi/gqysfjdt7n6jcpuxjzvo0/novaler4k-PurE2-7.4.zip?rlkey=nvop5vgehue4qmhivot71nc3x&st=a41fkkv9&dl=0
-04_OpenVIX_6.7.011_09062025 https://dl.dropboxusercontent.com/scl/fi/mviz1ac9x7vlrb4j6h0ma/openvix-6.7.001-backup-novaler4k.zip?rlkey=pd6p3nlypuhl67iq7k99mkiwf&st=cd32ls91&dl=0
-05_Egami_10.6_R12_MegaExclusive_08062025 https://dl.dropboxusercontent.com/scl/fi/wd8der6xz12l303mgklbh/egami-10.6-r2-novaler4k-KhaledAli.zip?rlkey=t82g7zljf4t8nh8mljvyf59v2&st=uhvjutfz&dl=0
+01_Egami_10.6_R14_MegaExclusive_19062025 https://dl.dropboxusercontent.com/scl/fi/wd8der6xz12l303mgklbh/egami-10.6-r2-novaler4k-KhaledAli.zip?rlkey=t82g7zljf4t8nh8mljvyf59v2&st=uhvjutfz&dl=0
+02_Openbh_5.5.1.012_12062025 https://dl.dropboxusercontent.com/scl/fi/9f17kb531zb2ro7b13ojz/openbh-5.5-novaler4k.zip?rlkey=b74lhwlqw8oj3j77ahnaz4wf5&st=xp7liw6p&dl=0
+03_OpenPli_9.1_09062025 https://dl.dropboxusercontent.com/scl/fi/241c4w68obgp1d9yzd6w6/openpli-9.1-novaler4k-backup.zip?rlkey=axy0qpld8n48klgd2p6ogtxyg&st=2tiiy0ya&dl=0
+04_PurE2_7.4_09062025 https://dl.dropboxusercontent.com/scl/fi/gqysfjdt7n6jcpuxjzvo0/novaler4k-PurE2-7.4.zip?rlkey=nvop5vgehue4qmhivot71nc3x&st=a41fkkv9&dl=0
+05_OpenVIX_6.7.011_09062025 https://dl.dropboxusercontent.com/scl/fi/mviz1ac9x7vlrb4j6h0ma/openvix-6.7.001-backup-novaler4k.zip?rlkey=pd6p3nlypuhl67iq7k99mkiwf&st=cd32ls91&dl=0
 06_Openatv_7.6_Beta_14052025 https://dl.dropboxusercontent.com/scl/fi/zw0jsokzo68tksyb0xdsk/openatv-7.6-novaler4k.zip?rlkey=hcre0q7nup3l5v8ds0zhbamyz&st=mvom0vmx&dl=0
 07_Openatv_7.5.1_14052025_BestChoice https://dl.dropboxusercontent.com/scl/fi/f8nu2y6xqbn2ac4vqxtlj/openatv-7.5.1-novaler4k.zip?rlkey=bulo2f4obqurhtkegyf22y143&st=bviiqwvj&dl=0
 08_OpenPli_dev_14052025 https://dl.dropboxusercontent.com/scl/fi/oz8l9k7l6aejwun7u7xz1/openpli-develop-novaler4k-backup.zip?rlkey=f42cfh0jq9xsxui97exxu8mg6&st=1hdymr3r&dl=0
@@ -16,7 +16,7 @@
 03_Openpli_Scarthgap https://downloads.openpli.org/builds/multibox/openpli-scarthgap-multibox-20250523_emmc.zip
 04_OpenPLi_9.1 https://downloads.openpli.org/builds/multibox/openpli-9.1-release-multibox-20250518_emmc.zip
 05_Openbh_5.5.1.012 https://www.novaler.com/uploads/enigma/openbh/openbh-5.5.1.012.release-novaler4k_multi.zip 
-06_Egami_10.6_R12 https://image.egami-image.com/10.6/novaler4k/egami-10.6-r12-novaler4k-20250605_multi.zip
+06_Egami_10.6_R14 https://image.egami-image.com/10.6/novaler4k/egami-10.6-r14-novaler4k-20250618_multi.zip
 07_PurE2_7.4 https://dl.dropboxusercontent.com/scl/fi/rebun1u86cy4b9dg0sbh7/novaler4k-PurE2-7.4-20240829_multi.zip?rlkey=rks7z8mqlmaoefdt9fnyi20or&st=6fwxfwoz&dl=0
 08_OpenVix_6.7.010 https://www.novaler.com/uploads/enigma/openvix/openvix-6.7.010.release-novaler4k_multi.zip
 ===|||Novaler_4K_Official|||=== https://khaledali.com
