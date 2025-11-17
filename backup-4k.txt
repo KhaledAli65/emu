@@ -2,11 +2,10 @@
 ===KhaledAli_Novaler_4K_online_flash=== https://khaledali.com
 ====|||KhaledAli_Backup|||==== https://khaledali.com 
 01_Egami_11.0_R07_16_11_2025 https://dl.dropboxusercontent.com/scl/fi/5wbjmzajjvji9sbzk7rph/egami-11.0-novaler4k.zip?rlkey=ofa6y0zhtsp4yu21v1uome48z&st=7s41b45v&dl=0
-02_Openatv_7.6_14_10_2025 https://dl.dropboxusercontent.com/scl/fi/zw0jsokzo68tksyb0xdsk/openatv-7.6-novaler4k.zip?rlkey=hcre0q7nup3l5v8ds0zhbamyz&st=mvom0vmx&dl=0
-03_OpenVIX_6.7.019_23092025 https://dl.dropboxusercontent.com/scl/fi/i26ifd5kzifyv5lcrk6d9/openvix-6.7-novaler4k.zip?rlkey=1r4lqkjfh9l9drjoda18kbndi&st=n74v9lly&dl=0
-04_Openbh_5.6_28082025 https://dl.dropboxusercontent.com/scl/fi/9f17kb531zb2ro7b13ojz/openbh-5.5-novaler4k.zip?rlkey=b74lhwlqw8oj3j77ahnaz4wf5&st=xp7liw6p&dl=0
-05_OpenSPA_8.5_002_28082025 https://dl.dropboxusercontent.com/scl/fi/bdkxqbnck61fzsew6m3x2/openspa-8.5-novaler4k.zip?rlkey=qna01zhgnrqxu2s2s5esbc5jt&st=asr9w1u0&dl=0
-06_PurE2_7.4_09062025 https://dl.dropboxusercontent.com/scl/fi/gqysfjdt7n6jcpuxjzvo0/novaler4k-PurE2-7.4.zip?rlkey=nvop5vgehue4qmhivot71nc3x&st=a41fkkv9&dl=0
+02_Openatv_7.6_17_11_2025 https://dl.dropboxusercontent.com/scl/fi/zw0jsokzo68tksyb0xdsk/openatv-7.6-novaler4k.zip?rlkey=hcre0q7nup3l5v8ds0zhbamyz&st=mvom0vmx&dl=0
+03_OpenVIX_6.7.020_17_11_2025 https://dl.dropboxusercontent.com/scl/fi/i26ifd5kzifyv5lcrk6d9/openvix-6.7-novaler4k.zip?rlkey=1r4lqkjfh9l9drjoda18kbndi&st=n74v9lly&dl=0
+04_Openbh_5.6.01_17_11_2025 https://dl.dropboxusercontent.com/scl/fi/9f17kb531zb2ro7b13ojz/openbh-5.5-novaler4k.zip?rlkey=b74lhwlqw8oj3j77ahnaz4wf5&st=xp7liw6p&dl=0
+05_PurE2_7.4_17_12_2025 https://dl.dropboxusercontent.com/scl/fi/gqysfjdt7n6jcpuxjzvo0/novaler4k-PurE2-7.4.zip?rlkey=nvop5vgehue4qmhivot71nc3x&st=a41fkkv9&dl=0
 ===||||Novaler_4K_BOOT_5|||=== https://khaledali.com
 01_Openpli_9.0_BOOT_5 https://www.novaler.com/uploads/enigma/boot5/openpli-develop-multibox-boot5.zip
 ===|||Novaler_4K_Android|||=== https://khaledali.com
