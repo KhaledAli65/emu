@@ -1,11 +1,11 @@
 *****|Welcome|***** https://khaledali.com
 ===KhaledAli_Novaler_4K_online_flash=== https://khaledali.com
 ====|||KhaledAli_Backup|||==== https://khaledali.com 
-01_Openbh_5.6.03_20_02_2026 https://dl.dropboxusercontent.com/scl/fi/7nc874m8t7ttco393px2s/openbh-5.6-novaler4k.zip?rlkey=sg3tbluituwcrsl6923bwuf9w&st=g7sjewmq&dl=0
-02_Openatv_7.6_19_02_2026 https://dl.dropboxusercontent.com/scl/fi/zw0jsokzo68tksyb0xdsk/openatv-7.6-novaler4k.zip?rlkey=hcre0q7nup3l5v8ds0zhbamyz&st=mvom0vmx&dl=0
-03_Egami_11.0_R13_18_02_2026 https://dl.dropboxusercontent.com/scl/fi/5wbjmzajjvji9sbzk7rph/egami-11.0-novaler4k.zip?rlkey=ofa6y0zhtsp4yu21v1uome48z&st=7s41b45v&dl=0
-04_OpenVIX_6.8.002_11_01_2026 https://dl.dropboxusercontent.com/scl/fi/i26ifd5kzifyv5lcrk6d9/openvix-6.7-novaler4k.zip?rlkey=1r4lqkjfh9l9drjoda18kbndi&st=n74v9lly&dl=0
-05_PurE2_7.6_11_01_2026 https://dl.dropboxusercontent.com/scl/fi/gqysfjdt7n6jcpuxjzvo0/novaler4k-PurE2-7.4.zip?rlkey=nvop5vgehue4qmhivot71nc3x&st=a41fkkv9&dl=0
+01_PurE2_7.6_20_02_2026 https://dl.dropboxusercontent.com/scl/fi/gqysfjdt7n6jcpuxjzvo0/novaler4k-PurE2-7.4.zip?rlkey=nvop5vgehue4qmhivot71nc3x&st=a41fkkv9&dl=0
+02_Openbh_5.6.03_20_02_2026 https://dl.dropboxusercontent.com/scl/fi/7nc874m8t7ttco393px2s/openbh-5.6-novaler4k.zip?rlkey=sg3tbluituwcrsl6923bwuf9w&st=g7sjewmq&dl=0
+03_Openatv_7.6_19_02_2026 https://dl.dropboxusercontent.com/scl/fi/zw0jsokzo68tksyb0xdsk/openatv-7.6-novaler4k.zip?rlkey=hcre0q7nup3l5v8ds0zhbamyz&st=mvom0vmx&dl=0
+04_Egami_11.0_R13_18_02_2026 https://dl.dropboxusercontent.com/scl/fi/5wbjmzajjvji9sbzk7rph/egami-11.0-novaler4k.zip?rlkey=ofa6y0zhtsp4yu21v1uome48z&st=7s41b45v&dl=0
+05_OpenVIX_6.8.002_11_01_2026 https://dl.dropboxusercontent.com/scl/fi/i26ifd5kzifyv5lcrk6d9/openvix-6.7-novaler4k.zip?rlkey=1r4lqkjfh9l9drjoda18kbndi&st=n74v9lly&dl=0
 ===||||Novaler_4K_BOOT_5|||=== https://khaledali.com
 01_Openpli_9.0_BOOT_5 https://www.novaler.com/uploads/enigma/boot5/openpli-develop-multibox-boot5.zip
 ===|||Novaler_4K_Android|||=== https://khaledali.com
