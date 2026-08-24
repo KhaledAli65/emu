@@ -1,32 +1,22 @@
-================================================== https://khaledali.com[span_0](start_span)[span_0](end_span)
-■_*****_Welcome_to_KhaledAli_Online_Flash_*****_■ https://khaledali.com[span_1](start_span)[span_1](end_span)
-================================================== https://khaledali.com[span_2](start_span)[span_2](end_span)
-
-■_===_KhaledAli_Backup_=== https://khaledali.com[span_3](start_span)[span_3](end_span)
--------------------------------------------------- https://khaledali.com[span_4](start_span)[span_4](end_span)
-●_01_Openatv_8.0_23_08_2026 https://ghproxy.net/https://github.com/KhaledAli65/books/releases/download/Novaler4k/openatv-8.0.0-beta-novaler4k-23082026.zip[span_5](start_span)[span_5](end_span)
-●_02_OpenVIX_6.9.002_23_08_2026 https://ghproxy.net/https://github.com/KhaledAli65/books/releases/download/Novaler4k/openvix-6.9.002-novaler4k_23082026.zip[span_6](start_span)[span_6](end_span)
-●_03_Egami_11.0_R21_23_08_2026 https://ghproxy.net/https://github.com/KhaledAli65/books/releases/download/Novaler4k/egami-11.0-r21-novaler4k-23082026.zip[span_7](start_span)[span_7](end_span)
-●_04_PurE2_7.6_23_08_2026 https://ghproxy.net/https://github.com/KhaledAli65/books/releases/download/Novaler4k/novaler4k-PurE2-7.6-23082026.zip[span_8](start_span)[span_8](end_span)
-●_05_Openbh_6.0.001_23_08_2026 https://ghproxy.net/https://github.com/KhaledAli65/books/releases/download/Novaler4k/openbh-6.0.001-novaler4k_23082026.zip[span_9](start_span)[span_9](end_span)
-●_06_Openatv_ARABIC https://ghproxy.net/https://github.com/KhaledAli65/books/releases/download/Novaler4k/openatv-7.6.0-novaler4k-ARABIC.zip[span_10](start_span)[span_10](end_span)
-
-▲_===_Novaler_4K_BOOT_5_=== https://khaledali.com[span_11](start_span)[span_11](end_span)
--------------------------------------------------- https://khaledali.com[span_12](start_span)[span_12](end_span)
-►_01_Openpli_9.0_BOOT_5 https://www.novaler.com/uploads/enigma/boot5/openpli-develop-multibox-boot5.zip[span_13](start_span)[span_13](end_span)
-
-◆_===_Novaler_4K_Android_=== https://khaledali.com[span_14](start_span)[span_14](end_span)
--------------------------------------------------- https://khaledali.com[span_15](start_span)[span_15](end_span)
-□_01_Android_8_4K https://www.novaler.com/uploads/flashes/Android_8.0_multibox_4k_20012025.zip[span_16](start_span)[span_16](end_span)
-□_02_Android_7_4K https://www.novaler.com/uploads/flashes/Android-v2022-multibox.zip[span_17](start_span)[span_17](end_span)
-□_03_Android_Senator https://www.novaler.com/uploads/flashes/Multibox-H5D-Senator.zip[span_18](start_span)[span_18](end_span)
-□_04_Android_Golden https://www.novaler.com/uploads/flashes/Multibox-STAR_NET_GOLDEN-2070.zip[span_19](start_span)[span_19](end_span)
-□_05_Android_WeZone https://www.novaler.com/uploads/flashes/Multibox-WezoneM8.zip[span_20](start_span)[span_20](end_span)
-□_06_Android_QBox https://www.novaler.com/uploads/flashes/Multibox-QBOX1.zip[span_21](start_span)[span_21](end_span)
-□_07_Android_ForTec https://www.novaler.com/uploads/flashes/Multibox-FortecStar.zip[span_22](start_span)[span_22](end_span)
-
-⚙_===_Novaler_4K_Recovery_=== https://khaledali.com[span_23](start_span)[span_23](end_span)
--------------------------------------------------- https://khaledali.com[span_24](start_span)[span_24](end_span)
-◇_01_Recovery_353_4K https://www.novaler.com/uploads/flashes/novaler4k-20240428_recovery_emmc_353.zip[span_25](start_span)[span_25](end_span)
-◇_02_Recovery_318_4K https://www.novaler.com/uploads/flashes/novaler4k-20240428_recovery_emmc_318.zip[span_26](start_span)[span_26](end_span)
-
+*****|Welcome|***** https://khaledali.com
+===KhaledAli_Novaler_4K_online_flash=== https://khaledali.com
+====|||KhaledAli_Backup|||==== https://khaledali.com 
+01_Openatv_8.0_23_08_2026 https://ghproxy.net/https://github.com/KhaledAli65/books/releases/download/Novaler4k/openatv-8.0.0-beta-novaler4k-23082026.zip
+02_OpenVIX_6.9.002_23_08_2026 https://ghproxy.net/https://github.com/KhaledAli65/books/releases/download/Novaler4k/openvix-6.9.002-novaler4k_23082026.zip
+03_Egami_11.0_R21_23_08_2026 https://ghproxy.net/https://github.com/KhaledAli65/books/releases/download/Novaler4k/egami-11.0-r21-novaler4k-23082026.zip
+04_PurE2_7.6_23_08_2026 https://ghproxy.net/https://github.com/KhaledAli65/books/releases/download/Novaler4k/novaler4k-PurE2-7.6-23082026.zip
+05_Openbh_6.0.001_23_08_2026 https://ghproxy.net/https://github.com/KhaledAli65/books/releases/download/Novaler4k/openbh-6.0.001-novaler4k_23082026.zip
+06_Openatv_ARABIC https://ghproxy.net/https://github.com/KhaledAli65/books/releases/download/Novaler4k/openatv-7.6.0-novaler4k-ARABIC.zip
+===||||Novaler_4K_BOOT_5|||=== https://khaledali.com
+01_Openpli_9.0_BOOT_5 https://www.novaler.com/uploads/enigma/boot5/openpli-develop-multibox-boot5.zip
+===|||Novaler_4K_Android|||=== https://khaledali.com
+01_Android_8_4K https://www.novaler.com/uploads/flashes/Android_8.0_multibox_4k_20012025.zip
+02_Android_7_4K https://www.novaler.com/uploads/flashes/Android-v2022-multibox.zip
+03_Androi_senator https://www.novaler.com/uploads/flashes/Multibox-H5D-Senator.zip
+04_Android_Golden https://www.novaler.com/uploads/flashes/Multibox-STAR_NET_GOLDEN-2070.zip
+05_Android_WeZone https://www.novaler.com/uploads/flashes/Multibox-WezoneM8.zip
+06_Android_QBox https://www.novaler.com/uploads/flashes/Multibox-QBOX1.zip
+07_Android_ForTec https://www.novaler.com/uploads/flashes/Multibox-FortecStar.zip
+===|||Novaler_4K_Recovery|||=== https://khaledali.com
+01_Recovery_353_4K https://www.novaler.com/uploads/flashes/novaler4k-20240428_recovery_emmc_353.zip
+02_Recovery_318_4K https://www.novaler.com/uploads/flashes/novaler4k-20240428_recovery_emmc_318.zip
