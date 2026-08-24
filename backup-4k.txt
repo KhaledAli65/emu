@@ -1,22 +1,31 @@
-*****|Welcome|***** https://khaledali.com
-===KhaledAli_Novaler_4K_online_flash=== https://khaledali.com
-====|||KhaledAli_Backup|||==== https://khaledali.com 
-01_Openatv_8.0_23_08_2026 https://ghproxy.net/https://github.com/KhaledAli65/books/releases/download/Novaler4k/openatv-8.0.0-beta-novaler4k-23082026.zip
-02_OpenVIX_6.9.002_23_08_2026 https://ghproxy.net/https://github.com/KhaledAli65/books/releases/download/Novaler4k/openvix-6.9.002-novaler4k_23082026.zip
-03_Egami_11.0_R21_23_08_2026 https://ghproxy.net/https://github.com/KhaledAli65/books/releases/download/Novaler4k/egami-11.0-r21-novaler4k-23082026.zip
-04_PurE2_7.6_23_08_2026 https://ghproxy.net/https://github.com/KhaledAli65/books/releases/download/Novaler4k/novaler4k-PurE2-7.6-23082026.zip
-05_Openbh_6.0.001_23_08_2026 https://ghproxy.net/https://github.com/KhaledAli65/books/releases/download/Novaler4k/openbh-6.0.001-novaler4k_23082026.zip
-06_Openatv_ARABIC https://ghproxy.net/https://github.com/KhaledAli65/books/releases/download/Novaler4k/openatv-7.6.0-novaler4k-ARABIC.zip
-===||||Novaler_4K_BOOT_5|||=== https://khaledali.com
-01_Openpli_9.0_BOOT_5 https://www.novaler.com/uploads/enigma/boot5/openpli-develop-multibox-boot5.zip
-===|||Novaler_4K_Android|||=== https://khaledali.com
-01_Android_8_4K https://www.novaler.com/uploads/flashes/Android_8.0_multibox_4k_20012025.zip
-02_Android_7_4K https://www.novaler.com/uploads/flashes/Android-v2022-multibox.zip
-03_Androi_senator https://www.novaler.com/uploads/flashes/Multibox-H5D-Senator.zip
-04_Android_Golden https://www.novaler.com/uploads/flashes/Multibox-STAR_NET_GOLDEN-2070.zip
-05_Android_WeZone https://www.novaler.com/uploads/flashes/Multibox-WezoneM8.zip
-06_Android_QBox https://www.novaler.com/uploads/flashes/Multibox-QBOX1.zip
-07_Android_ForTec https://www.novaler.com/uploads/flashes/Multibox-FortecStar.zip
-===|||Novaler_4K_Recovery|||=== https://khaledali.com
-01_Recovery_353_4K https://www.novaler.com/uploads/flashes/novaler4k-20240428_recovery_emmc_353.zip
-02_Recovery_318_4K https://www.novaler.com/uploads/flashes/novaler4k-20240428_recovery_emmc_318.zip
+================================================== https://khaledali.com
+🌟 ***** Welcome to KhaledAli Online Flash ***** 🌟 https://khaledali.com
+================================================== https://khaledali.com
+
+📌 === KhaledAli_Backup === https://khaledali.com
+-------------------------------------------------- https://khaledali.com
+🔹 01_Openatv_8.0_23_08_2026 https://ghproxy.net/https://github.com/KhaledAli65/books/releases/download/Novaler4k/openatv-8.0.0-beta-novaler4k-23082026.zip
+🔹 02_OpenVIX_6.9.002_23_08_2026 https://ghproxy.net/https://github.com/KhaledAli65/books/releases/download/Novaler4k/openvix-6.9.002-novaler4k_23082026.zip
+🔹 03_Egami_11.0_R21_23_08_2026 https://ghproxy.net/https://github.com/KhaledAli65/books/releases/download/Novaler4k/egami-11.0-r21-novaler4k-23082026.zip
+🔹 04_PurE2_7.6_23_08_2026 https://ghproxy.net/https://github.com/KhaledAli65/books/releases/download/Novaler4k/novaler4k-PurE2-7.6-23082026.zip
+🔹 05_Openbh_6.0.001_23_08_2026 https://ghproxy.net/https://github.com/KhaledAli65/books/releases/download/Novaler4k/openbh-6.0.001-novaler4k_23082026.zip
+🔹 06_Openatv_ARABIC https://ghproxy.net/https://github.com/KhaledAli65/books/releases/download/Novaler4k/openatv-7.6.0-novaler4k-ARABIC.zip
+
+⚡ === Novaler_4K_BOOT_5 === https://khaledali.com
+-------------------------------------------------- https://khaledali.com
+🚀 01_Openpli_9.0_BOOT_5 https://www.novaler.com/uploads/enigma/boot5/openpli-develop-multibox-boot5.zip
+
+🤖 === Novaler_4K_Android === https://khaledali.com
+-------------------------------------------------- https://khaledali.com
+📱 01_Android_8_4K https://www.novaler.com/uploads/flashes/Android_8.0_multibox_4k_20012025.zip
+📱 02_Android_7_4K https://www.novaler.com/uploads/flashes/Android-v2022-multibox.zip
+📱 03_Android_Senator https://www.novaler.com/uploads/flashes/Multibox-H5D-Senator.zip
+📱 04_Android_Golden https://www.novaler.com/uploads/flashes/Multibox-STAR_NET_GOLDEN-2070.zip
+📱 05_Android_WeZone https://www.novaler.com/uploads/flashes/Multibox-WezoneM8.zip
+📱 06_Android_QBox https://www.novaler.com/uploads/flashes/Multibox-QBOX1.zip
+📱 07_Android_ForTec https://www.novaler.com/uploads/flashes/Multibox-FortecStar.zip
+
+🛠️ === Novaler_4K_Recovery === https://khaledali.com
+-------------------------------------------------- https://khaledali.com
+🔄 01_Recovery_353_4K https://www.novaler.com/uploads/flashes/novaler4k-20240428_recovery_emmc_353.zip
+🔄 02_Recovery_318_4K https://www.novaler.com/uploads/flashes/novaler4k-20240428_recovery_emmc_318.zip
