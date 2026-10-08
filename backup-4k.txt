@@ -1,11 +1,11 @@
 *****|Welcome|***** https://khaledali.com
 ===KhaledAli_Novaler_4K_online_flash=== https://khaledali.com
 ====|||KhaledAli_Backup|||==== https://khaledali.com 
-01_OpenSPA_8.7.002_06_10_2026 https://ghproxy.net/https://github.com/KhaledAli65/books/releases/download/Novaler4k/openspa-8.7.002-OEA-novaler4k-06102026.zip
-02_Openbh_6.0.004_05_10_2026 https://ghproxy.net/https://github.com/KhaledAli65/books/releases/download/Novaler4k/openbh-6.0.004-novaler4k_05102026.zip
-03_Openatv_8.0.1_04_10_2026 https://ghproxy.net/https://github.com/KhaledAli65/books/releases/download/Novaler4k/openatv-8.0.1-novaler4k-04102026.zip
-04_OpenVIX_6.9.003_18_09_2026 https://ghproxy.net/https://github.com/KhaledAli65/books/releases/download/Novaler4k/openvix-6.9.003-novaler4k_18092026.zip
-05_Egami_11.0_R22_02_09_2026 https://ghproxy.net/https://github.com/KhaledAli65/books/releases/download/Novaler4k/egami-11.0-r22-novaler4k-02092026.zip
+01_Egami_11.0_R23_09_10_2026 https://ghproxy.net/https://github.com/KhaledAli65/books/releases/download/Novaler4k/egami-11.0-r23-novaler4k-08102026.zip
+02_OpenSPA_8.7.002_06_10_2026 https://ghproxy.net/https://github.com/KhaledAli65/books/releases/download/Novaler4k/openspa-8.7.002-OEA-novaler4k-06102026.zip
+03_Openbh_6.0.004_05_10_2026 https://ghproxy.net/https://github.com/KhaledAli65/books/releases/download/Novaler4k/openbh-6.0.004-novaler4k_05102026.zip
+04_Openatv_8.0.1_04_10_2026 https://ghproxy.net/https://github.com/KhaledAli65/books/releases/download/Novaler4k/openatv-8.0.1-novaler4k-04102026.zip
+05_OpenVIX_6.9.003_18_09_2026 https://ghproxy.net/https://github.com/KhaledAli65/books/releases/download/Novaler4k/openvix-6.9.003-novaler4k_18092026.zip
 06_PurE2_7.6_23_08_2026 https://ghproxy.net/https://github.com/KhaledAli65/books/releases/download/Novaler4k/novaler4k-PurE2-7.6-23082026.zip
 ===||||Novaler_4K_BOOT_5|||=== https://khaledali.com
 01_Openpli_9.0_BOOT_5 https://www.novaler.com/uploads/enigma/boot5/openpli-develop-multibox-boot5.zip
