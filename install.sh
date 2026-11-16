@@ -4,7 +4,7 @@
 # Developer: Khaled Ali
 # ==========================================================
 
-PANEL_URL="https://raw.githubusercontent.com/KhaledAli65/emu/main/emu_panel.py"
+PANEL_URL="https://raw.githubusercontent.com/KhaledAli65/emu/refs/heads/main/emu_panel.py"
 INSTALL_PATH="/usr/script/emu_panel.py"
 
 echo "=================================================="
