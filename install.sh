@@ -6,6 +6,7 @@
 
 PANEL_URL="https://raw.githubusercontent.com/KhaledAli65/emu/refs/heads/main/emu_panel.py"
 INSTALL_PATH="/usr/script/emu_panel.py"
+SERVICE_FILE="/etc/systemd/system/emu-panel.service"
 
 echo "=================================================="
 echo "      جاري تحميل وتثبيت لوحة إدارة الإيمو...        "
@@ -29,30 +30,37 @@ if [ ! -f "$INSTALL_PATH" ]; then
     exit 1
 fi
 
-# 4. إعطاء صلاحية التنفيذ
+# 4. إعطاء صلاحية التنفيذ لملف البايثون
 chmod +x "$INSTALL_PATH"
 
-# 5. ضبط التشغيل التلقائي مع الإقلاع (rc.local) بطريقة آمنة
-RC_FILE="/etc/rc.local"
-if [ ! -f "$RC_FILE" ]; then
-    echo -e "#!/bin/sh\npython3 $INSTALL_PATH &\nexit 0" > "$RC_FILE"
-    chmod +x "$RC_FILE"
-else
-    if ! grep -q "emu_panel.py" "$RC_FILE"; then
-        # إدراج السطر قبل exit 0 بطريقة تتوافق مع BusyBox
-        sed -i '/exit 0/i python3 /usr/script/emu_panel.py &' "$RC_FILE"
-    fi
-fi
+# 5. إنشاء وتفعيل خدمة النظام (Systemd Service) للتشغيل الدائم
+echo "[*] إعداد خدمة التشغيل الدائم (Daemon)..."
+cat << 'EOF' > "$SERVICE_FILE"
+[Unit]
+Description=Emu Web Panel for Enigma2
+After=network.target
 
-# 6. تشغيل اللوحة في الخلفية فوراً
-python3 "$INSTALL_PATH" &
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /usr/script/emu_panel.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+# 6. تحديث وتفعيل الخدمة في النظام
+systemctl daemon-reload
+systemctl enable emu-panel.service
+systemctl restart emu-panel.service
 
 # 7. جلب آيبي الرسيفر بطريقة متوافقة مع BusyBox
 IP_ADDR=$(ifconfig | grep 'inet ' | grep -v '127.0.0.1' | awk '{print $2}' | cut -d: -f2 | head -n 1)
 [ -z "$IP_ADDR" ] && IP_ADDR="IP_الرسيفر"
 
 echo "=================================================="
-echo "✅ تم التثبيت والتشغيل بنجاح!"
+echo "✅ تم التثبيت والتشغيل الدائم بنجاح!"
 echo "🌐 افتح المتصفح وتوجه إلى الرابط التالي:"
 echo "   http://$IP_ADDR:8585"
 echo "=================================================="
