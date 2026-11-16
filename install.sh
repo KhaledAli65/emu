@@ -32,16 +32,14 @@ fi
 # 4. إعطاء صلاحية التنفيذ لملف البايثون
 chmod +x "$INSTALL_PATH"
 
-# 5. ضبط التشغيل التلقائي عبر rc.local (المتوافق مع جميع صور Enigma2)
+# 5. ضبط التشغيل التلقائي عبر rc.local
 RC_FILE="/etc/rc.local"
 if [ ! -f "$RC_FILE" ]; then
     echo -e "#!/bin/sh\npython3 $INSTALL_PATH &\nexit 0" > "$RC_FILE"
     chmod +x "$RC_FILE"
 else
-    # إزالة أي إدخال قديم لتفادي التكرار ثم إضافة السطر قبل exit 0
     sed -i '/emu_panel.py/d' "$RC_FILE"
     sed -i '/exit 0/i python3 /usr/script/emu_panel.py &' "$RC_FILE"
-    # إذا لم يكن exit 0 موجوداً، قم بإضافة السطر في النهاية
     if ! grep -q "emu_panel.py" "$RC_FILE"; then
         echo "python3 $INSTALL_PATH &" >> "$RC_FILE"
     fi
@@ -56,7 +54,10 @@ IP_ADDR=$(ifconfig | grep 'inet ' | grep -v '127.0.0.1' | awk '{print $2}' | cut
 [ -z "$IP_ADDR" ] && IP_ADDR="192.168.1.3"
 
 echo "=================================================="
-echo "✅ تم التثبيت والتشغيل الدائم بنجاح!"
-echo "🌐 افتح المتصفح وتوجه إلى الرابط التالي:"
-echo "   http://$IP_ADDR:8585"
+echo "✅ تم التثبيت والتشغيل بنجاح!"
+echo "🌐 الرابط: http://$IP_ADDR:8585"
 echo "=================================================="
+
+# 8. أمر إنهاء السكربت وإغلاق النافذة تلقائياً
+sleep 2
+exit 0
