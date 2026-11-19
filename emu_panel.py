@@ -11,14 +11,17 @@ from socketserver import ThreadingMixIn
 # إعدادات السكربت والبورت (عدّل روابط GitHub هنا)
 # ==========================================================
 PORT = 8585
-OSCAM_SCRIPT_URL = "https://github.com/KhaledAli65/Channels/releases/download/Emuscript/EMU-oscam.sh"
-NCAM_SCRIPT_URL  = "https://github.com/KhaledAli65/Channels/releases/download/Emuscript/EMU-ncam.sh"
+OSCAM_SCRIPT_URL = "https://raw.githubusercontent.com/KhaledAli65/emu/main/install_oscam.sh"
+NCAM_SCRIPT_URL  = "https://raw.githubusercontent.com/KhaledAli65/emu/main/install_ncam.sh"
 
 # مسارات ملفات الإعدادات
 PATH_CCCAM_ETC    = "/etc/CCcam.cfg"
 PATH_CCCAM_TUXBOX = "/etc/tuxbox/config/CCcam.cfg"
 PATH_NCAM_SERVER  = "/etc/tuxbox/config/ncam.server"
 PATH_OSCAM_SERVER = "/etc/tuxbox/config/oscam.server"
+
+# تتبع المسار الحالي للتيرمنال داخل الجلسة
+CURRENT_CWD = "/home/root" if os.path.exists("/home/root") else "/"
 # ==========================================================
 
 HTML_PAGE = r"""<!DOCTYPE html>
@@ -133,6 +136,8 @@ HTML_PAGE = r"""<!DOCTYPE html>
   .btn-teal  { background: linear-gradient(135deg, #0d9488, #0f766e); }
   .btn-amber { background: linear-gradient(135deg, #f59e0b, #d97706); }
   .btn-indigo{ background: linear-gradient(135deg, #4f46e5, #4338ca); }
+  .btn-cyan  { background: linear-gradient(135deg, #0284c7, #0369a1); }
+  .btn-gray  { background: linear-gradient(135deg, #475569, #334155); }
 
   .form-grid {
     display: grid;
@@ -156,6 +161,12 @@ HTML_PAGE = r"""<!DOCTYPE html>
     transition: border-color 0.2s;
   }
 
+  textarea {
+    font-family: 'Courier New', Courier, monospace;
+    min-height: 76px;
+    resize: vertical;
+  }
+
   input:focus, textarea:focus {
     outline: none;
     border-color: #38bdf8;
@@ -170,6 +181,13 @@ HTML_PAGE = r"""<!DOCTYPE html>
     gap: 12px;
   }
 
+  .term-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 12px;
+  }
+
   .console-box {
     background: #020617;
     border: 1px solid #1e293b;
@@ -178,8 +196,8 @@ HTML_PAGE = r"""<!DOCTYPE html>
     font-family: 'Courier New', Courier, monospace;
     font-size: 0.88rem;
     color: #34d399;
-    min-height: 140px;
-    max-height: 300px;
+    min-height: 160px;
+    max-height: 360px;
     overflow-y: auto;
     direction: ltr;
     text-align: left;
@@ -202,7 +220,7 @@ HTML_PAGE = r"""<!DOCTYPE html>
 <div class="container">
   <div class="header">
     <h1>لوحة خدمات الإيمو والسيرفرات</h1>
-    <p>تثبيت الإيموهات من GitHub وإدارة ملفات السيسكام والأوسكام والإنكام بضغطة زر</p>
+    <p>تثبيت الإيموهات من GitHub وإدارة ملفات السيسكام والأوسكام والإنكام وتنفيذ أوامر التيرمنال</p>
   </div>
 
   <!-- قسم تثبيت الإيموهات -->
@@ -268,6 +286,28 @@ HTML_PAGE = r"""<!DOCTYPE html>
     </div>
   </div>
 
+  <!-- قسم التيرمنال المباشر -->
+  <div class="card">
+    <div class="card-title">
+      <span>💻 تيرمنال الأوامر المباشر (Web Shell)</span>
+      <span class="badge" id="cwd_badge">المسار: /home/root</span>
+    </div>
+
+    <div class="input-group">
+      <label>الصق أمراً واحداً أو عدة أوامر (Enter للتنفيذ السريع، أو Shift+Enter لسطر جديد):</label>
+      <textarea id="cmd_input" placeholder="مثال: opkg update && ls -la /etc/tuxbox/config" onkeydown="handleCmdKey(event)"></textarea>
+    </div>
+
+    <div class="term-controls">
+      <button class="btn btn-cyan" onclick="runShellCmd()">
+        <span>▶️ تنفيذ الأمر</span>
+      </button>
+      <button class="btn btn-gray" onclick="clearConsole()">
+        <span>🧹 مسح السجل</span>
+      </button>
+    </div>
+  </div>
+
   <!-- شاشة السجل والنتائج -->
   <div class="card">
     <div class="card-title">
@@ -278,10 +318,25 @@ HTML_PAGE = r"""<!DOCTYPE html>
 </div>
 
 <script>
-  function log(msg) {
+  function log(msg, append = false) {
     const box = document.getElementById('console');
-    box.textContent = msg;
+    if (append && box.textContent !== 'Ready... في انتظار تنفيذ الأوامر.') {
+      box.textContent += '\n' + msg;
+    } else {
+      box.textContent = msg;
+    }
     box.scrollTop = box.scrollHeight;
+  }
+
+  function clearConsole() {
+    document.getElementById('console').textContent = '';
+  }
+
+  function handleCmdKey(e) {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      runShellCmd();
+    }
   }
 
   function parseCline(val) {
@@ -339,6 +394,34 @@ HTML_PAGE = r"""<!DOCTYPE html>
       log(data.output);
     } catch (e) {
       log('❌ خطأ في الحفظ: ' + e);
+    }
+    setButtonsDisabled(false);
+  }
+
+  async function runShellCmd() {
+    const cmdBox = document.getElementById('cmd_input');
+    const cmd = cmdBox.value.trim();
+    if (!cmd) {
+      log('⚠️ يرجى لصق أو كتابة أمر لتنفيذه.', true);
+      return;
+    }
+
+    setButtonsDisabled(true);
+    log(`$ ${cmd}\n⏳ جاري التنفيذ...`, true);
+    try {
+      const res = await fetch('/api/exec', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({ cmd })
+      });
+      const data = await res.json();
+      if (data.cwd) {
+        document.getElementById('cwd_badge').textContent = `المسار: ${data.cwd}`;
+      }
+      log(data.output, true);
+      cmdBox.value = '';
+    } catch (e) {
+      log('❌ خطأ أثناء تنفيذ الأمر: ' + e, true);
     }
     setButtonsDisabled(false);
   }
@@ -434,6 +517,43 @@ class EmuWebHandler(BaseHTTPRequestHandler):
                 self._send_json({"output": msg})
             except Exception as e:
                 self._send_json({"output": f"❌ فشل الكتابة في الملف:\n{str(e)}"})
+
+        elif self.path == "/api/exec":
+            global CURRENT_CWD
+            cmd = (payload.get("cmd") or "").strip()
+            if not cmd:
+                self._send_json({"output": "⚠️ الأمر فارغ.", "cwd": CURRENT_CWD})
+                return
+
+            # تشغيل الأمر داخل المجلد الحالي ثم طباعة المجلد الجديد بعد التنفيذ
+            wrapped_cmd = f"{cmd}\n__PWD_MARKER__\npwd"
+            wrapped_cmd = f"{cmd} ; echo '___CWD___' ; pwd"
+            try:
+                proc = subprocess.run(
+                    wrapped_cmd,
+                    shell=True,
+                    cwd=CURRENT_CWD if os.path.isdir(CURRENT_CWD) else "/",
+                    stdout=subprocess.PIPE,
+                    stderr=subprocess.STDOUT,
+                    text=True,
+                    timeout=180
+                )
+                raw_out = proc.stdout or ""
+                if "___CWD___" in raw_out:
+                    parts = raw_out.rsplit("___CWD___", 1)
+                    out_text = parts[0].strip()
+                    new_cwd = parts[1].strip().splitlines()[-1].strip() if parts[1].strip() else CURRENT_CWD
+                    if os.path.isdir(new_cwd):
+                        CURRENT_CWD = new_cwd
+                else:
+                    out_text = raw_out.strip()
+
+                final_out = out_text if out_text else "✅ تم تنفيذ الأمر (لا يوجد مخرج نصي)."
+                self._send_json({"output": final_out, "cwd": CURRENT_CWD})
+            except subprocess.TimeoutExpired:
+                self._send_json({"output": "⚠️ انتهت مهلة تنفيذ الأمر (180 ثانية).", "cwd": CURRENT_CWD})
+            except Exception as e:
+                self._send_json({"output": f"❌ خطأ أثناء التنفيذ:\n{str(e)}", "cwd": CURRENT_CWD})
         else:
             self.send_error(404)
 
@@ -452,4 +572,3 @@ if __name__ == "__main__":
         server.serve_forever()
     except KeyboardInterrupt:
         server.server_close()
-
