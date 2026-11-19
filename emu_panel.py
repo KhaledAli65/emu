@@ -8,11 +8,18 @@ from http.server import HTTPServer, BaseHTTPRequestHandler
 from socketserver import ThreadingMixIn
 
 # ==========================================================
-# إعدادات السكربت والبورت (عدّل روابط GitHub هنا)
+# إعدادات السكربت والبورت (روابط الأدوات والخدمات)
 # ==========================================================
 PORT = 8585
 OSCAM_SCRIPT_URL = "https://raw.githubusercontent.com/KhaledAli65/emu/main/install_oscam.sh"
 NCAM_SCRIPT_URL  = "https://raw.githubusercontent.com/KhaledAli65/emu/main/install_ncam.sh"
+
+TOOLS_URLS = {
+    "channels": "https://github.com/KhaledAli65/Channels/releases/download/Toolscript/TOOL-Khaled_Channels_fullsat.sh",
+    "picon_ext": "https://github.com/KhaledAli65/Channels/releases/download/Toolscript/TOOL-KhaledAli_picon_pro.sh",
+    "picon_int": "https://github.com/KhaledAli65/Channels/releases/download/Toolscript/TOOL-KhaledSNP_internal.sh",
+    "epg": "https://github.com/KhaledAli65/Channels/releases/download/Toolscript/TOOL-KhaledEpg.sh",
+}
 
 # مسارات ملفات الإعدادات
 PATH_CCCAM_ETC    = "/etc/CCcam.cfg"
@@ -29,7 +36,7 @@ HTML_PAGE = r"""<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>لوحة إدارة الإيمو والاشتراكات</title>
+<title>Cloud&amp;more - خدمات متكاملة</title>
 <style>
   :root {
     --bg-dark: #0f172a;
@@ -58,7 +65,7 @@ HTML_PAGE = r"""<!DOCTYPE html>
   }
 
   .container {
-    max-width: 900px;
+    max-width: 920px;
     margin: 0 auto;
   }
 
@@ -74,14 +81,15 @@ HTML_PAGE = r"""<!DOCTYPE html>
   }
 
   .header h1 {
-    font-size: 1.9rem;
+    font-size: 2rem;
     background: linear-gradient(90deg, #38bdf8, #818cf8, #c084fc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 8px;
+    direction: ltr;
   }
 
-  .header p { color: var(--text-muted); font-size: 0.95rem; }
+  .header p { color: var(--text-muted); font-size: 1rem; font-weight: 600; }
 
   .card {
     background: var(--card-bg);
@@ -104,17 +112,17 @@ HTML_PAGE = r"""<!DOCTYPE html>
     padding-bottom: 12px;
   }
 
-  .emu-grid {
+  .emu-grid, .tools-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 15px;
+    gap: 14px;
   }
 
   .btn {
     border: none;
     border-radius: 12px;
-    padding: 14px 20px;
-    font-size: 1rem;
+    padding: 14px 18px;
+    font-size: 0.98rem;
     font-weight: 600;
     color: #fff;
     cursor: pointer;
@@ -130,14 +138,18 @@ HTML_PAGE = r"""<!DOCTYPE html>
   .btn:active { transform: translateY(0); }
   .btn:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
 
-  .btn-oscam { background: linear-gradient(135deg, #2563eb, #1d4ed8); }
-  .btn-ncam  { background: linear-gradient(135deg, #7c3aed, #6d28d9); }
-  .btn-green { background: linear-gradient(135deg, #10b981, #059669); }
-  .btn-teal  { background: linear-gradient(135deg, #0d9488, #0f766e); }
-  .btn-amber { background: linear-gradient(135deg, #f59e0b, #d97706); }
-  .btn-indigo{ background: linear-gradient(135deg, #4f46e5, #4338ca); }
-  .btn-cyan  { background: linear-gradient(135deg, #0284c7, #0369a1); }
-  .btn-gray  { background: linear-gradient(135deg, #475569, #334155); }
+  .btn-oscam   { background: linear-gradient(135deg, #2563eb, #1d4ed8); }
+  .btn-ncam    { background: linear-gradient(135deg, #7c3aed, #6d28d9); }
+  .btn-green   { background: linear-gradient(135deg, #10b981, #059669); }
+  .btn-teal    { background: linear-gradient(135deg, #0d9488, #0f766e); }
+  .btn-amber   { background: linear-gradient(135deg, #f59e0b, #d97706); }
+  .btn-indigo  { background: linear-gradient(135deg, #4f46e5, #4338ca); }
+  .btn-cyan    { background: linear-gradient(135deg, #0284c7, #0369a1); }
+  .btn-gray    { background: linear-gradient(135deg, #475569, #334155); }
+  .btn-rose    { background: linear-gradient(135deg, #e11d48, #be123c); }
+  .btn-emerald { background: linear-gradient(135deg, #059669, #047857); }
+  .btn-sky     { background: linear-gradient(135deg, #0ea5e9, #0284c7); }
+  .btn-violet  { background: linear-gradient(135deg, #8b5cf6, #7c3aed); }
 
   .form-grid {
     display: grid;
@@ -219,8 +231,8 @@ HTML_PAGE = r"""<!DOCTYPE html>
 
 <div class="container">
   <div class="header">
-    <h1>لوحة خدمات الإيمو والسيرفرات</h1>
-    <p>تثبيت الإيموهات من GitHub وإدارة ملفات السيسكام والأوسكام والإنكام وتنفيذ أوامر التيرمنال</p>
+    <h1>Cloud&amp;more</h1>
+    <p>خدمات متكاملة</p>
   </div>
 
   <!-- قسم تثبيت الإيموهات -->
@@ -235,6 +247,28 @@ HTML_PAGE = r"""<!DOCTYPE html>
       </button>
       <button class="btn btn-ncam" onclick="installEmu('ncam')">
         <span>🔥 تثبيت إيمو NCam</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- قسم القنوات والبيكونات والـ EPG -->
+  <div class="card">
+    <div class="card-title">
+      <span>📡 القنوات والبيكونات ودليل البرامج</span>
+      <span class="badge">Cloud&amp;more Tools</span>
+    </div>
+    <div class="tools-grid">
+      <button class="btn btn-sky" onclick="runTool('channels', 'تحديث ملف القنوات')">
+        <span>📺 تحديث ملف القنوات</span>
+      </button>
+      <button class="btn btn-emerald" onclick="runTool('picon_ext', 'تحديث بيكونات خارجى')">
+        <span>💾 تحديث بيكونات خارجى</span>
+      </button>
+      <button class="btn btn-violet" onclick="runTool('picon_int', 'تحديث بيكونات داخلى')">
+        <span>🖼️ تحديث بيكونات داخلى</span>
+      </button>
+      <button class="btn btn-rose" onclick="runTool('epg', 'دليل البرامج الالكترونى')">
+        <span>🗓️ دليل البرامج الالكترونى</span>
       </button>
     </div>
   </div>
@@ -371,6 +405,23 @@ HTML_PAGE = r"""<!DOCTYPE html>
     setButtonsDisabled(false);
   }
 
+  async function runTool(toolKey, toolLabel) {
+    setButtonsDisabled(true);
+    log(`⏳ جاري تنفيذ (${toolLabel})...\nيرجى الانتظار حتى انتهاء العملية...`);
+    try {
+      const res = await fetch('/api/tool', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({ tool: toolKey, label: toolLabel })
+      });
+      const data = await res.json();
+      log(data.output);
+    } catch (e) {
+      log('❌ خطأ في الاتصال بالرسيفر: ' + e);
+    }
+    setButtonsDisabled(false);
+  }
+
   async function saveSub(target) {
     const host = document.getElementById('host').value.trim();
     const port = document.getElementById('port').value.trim();
@@ -476,6 +527,26 @@ class EmuWebHandler(BaseHTTPRequestHandler):
             except Exception as e:
                 self._send_json({"output": f"❌ حدث خطأ أثناء التثبيت:\n{str(e)}"})
 
+        elif self.path == "/api/tool":
+            tool_key = payload.get("tool")
+            tool_label = payload.get("label") or tool_key
+            url = TOOLS_URLS.get(tool_key)
+            if not url:
+                self._send_json({"output": "❌ أداة غير معروفة."}, 400)
+                return
+
+            cmd = f'wget -qO- "{url}" | sh'
+            try:
+                proc = subprocess.run(
+                    cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, timeout=240
+                )
+                out = proc.stdout.strip() or "✅ تم تنفيذ السكربت بنجاح."
+                self._send_json({"output": f"✅ انتهى تنفيذ ({tool_label}):\n\n{out}"})
+            except subprocess.TimeoutExpired:
+                self._send_json({"output": f"⚠️ انتهت مهلة تنفيذ ({tool_label})."})
+            except Exception as e:
+                self._send_json({"output": f"❌ حدث خطأ أثناء تنفيذ ({tool_label}):\n{str(e)}"})
+
         elif self.path == "/api/save":
             target = payload.get("target")
             host = payload.get("host")
@@ -525,8 +596,6 @@ class EmuWebHandler(BaseHTTPRequestHandler):
                 self._send_json({"output": "⚠️ الأمر فارغ.", "cwd": CURRENT_CWD})
                 return
 
-            # تشغيل الأمر داخل المجلد الحالي ثم طباعة المجلد الجديد بعد التنفيذ
-            wrapped_cmd = f"{cmd}\n__PWD_MARKER__\npwd"
             wrapped_cmd = f"{cmd} ; echo '___CWD___' ; pwd"
             try:
                 proc = subprocess.run(
@@ -567,7 +636,7 @@ class EmuWebHandler(BaseHTTPRequestHandler):
 
 if __name__ == "__main__":
     server = ThreadingHTTPServer(("0.0.0.0", PORT), EmuWebHandler)
-    print(f"Emu Web Panel running on http://0.0.0.0:{PORT}")
+    print(f"Cloud&more Web Panel running on http://0.0.0.0:{PORT}")
     try:
         server.serve_forever()
     except KeyboardInterrupt:
